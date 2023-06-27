@@ -11,10 +11,10 @@ jobs:
       - name: checkout Repository
         uses: actions/checkout@v2
         with:
-          repository: owner/Github-demo
+          repository: owner/mounika-demo
           ref: main
-          path: Github-demo
+          path: mounika-demo
 
       - name: Read Target file
         run: |
-          cat Github-demo/path/to/target-file.txt  
+          cat mounika-demo/C:\Users\demounik\kpmg-1\mounika-demo/to/target-file.txt  
