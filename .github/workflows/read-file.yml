@@ -1,0 +1,20 @@
+name : Read Target file workflow
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  read-file:
+    runs-on: windows-latest
+    steps:
+      - name: checkout Repository
+        uses: actions/checkout@v2
+        with:
+          repository: owner/Github-demo
+          ref: main
+          path: Github-demo
+
+      - name: Read Target file
+        run: |
+          cat Github-demo/path/to/target-file.txt  
