@@ -17,4 +17,4 @@ jobs:
 
       - name: Read Target file
         run: |
-          cat mounika-demo/C:\Users\demounik\kpmg-1\mounika-demo/to/target-file.txt  
+          cat mounika-demo/C:\Users\demounik\kpmg-1\mounika-demo/to/target-file.txt
