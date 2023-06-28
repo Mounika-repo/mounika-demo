@@ -13,6 +13,6 @@ jobs:
       - name: Read target file
         run: |
           curl -sSL
-          build_dev.ps1
-          VALUE=$(grep "desired_pattern" target_file.txt)
+          https://github.com/Mounika-repo/Github-demo.git
+          VALUE=$(grep "desired_pattern" ps1.txt)
           echo "$VALUE" >> captured_values.csv
