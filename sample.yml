@@ -1,0 +1,25 @@
+name: Read File and Capture Value
+
+on:
+  push:
+    branches:
+      - feature
+
+jobs:
+  capture_value:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Read target file
+        run: |
+          # Replace `OWNER/REPO` with the target repository information
+          curl -sSL "https://github.com/Mounika-repo/Github-demo/blob/feature/all/captured_values.csv.xlsx" -o target_file.txt
+
+      - name: Capture value and write to CSV
+        run: |
+          # Replace with your logic to capture the desired value from target_file.txt
+          VALUE=$(grep "desired_pattern" target_file.txt)
+          echo "$VALUE" >> captured_values.csv
