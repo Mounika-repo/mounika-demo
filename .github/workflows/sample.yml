@@ -18,5 +18,5 @@ jobs:
 
       - name: Capture value and write to CSV
         run: |
-# Export the captured value pairs to a CSV file
+#Export the captured value pairs to a CSV file
 $values | Export-Csv -Path "output.csv" -NoTypeInformation
