@@ -10,11 +10,9 @@ jobs:
     steps:
       - name: checkout Repository
         uses: actions/checkout@v2
-        with:
-          repository: owner/mounika-demo
-          ref: main
-          path: mounika-demo
-
-      - name: Read Target file
+      - name: Read target file
         run: |
-          cat mounika-demo/C:\Users\demounik\kpmg-1\mounika-demo/to/target-file.txt
+          curl -sSL
+          .github/workflows/readfile.yml
+          VALUE=$(grep "desired_pattern" target_file.txt)
+          echo "$VALUE" >> captured_values.csv
