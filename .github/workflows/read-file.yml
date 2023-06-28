@@ -13,6 +13,6 @@ jobs:
       - name: Read target file
         run: |
           curl -sSL
-          .github/workflows/readfile.yml
+          build_dev.ps1
           VALUE=$(grep "desired_pattern" target_file.txt)
           echo "$VALUE" >> captured_values.csv
