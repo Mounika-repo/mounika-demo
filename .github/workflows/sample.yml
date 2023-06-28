@@ -20,4 +20,4 @@ jobs:
         run: |
           # Replace with your logic to capture the desired value from target_file.txt
           VALUE=$(grep "desired_pattern" target_file.txt)
-          echo "$VALUE" >> captured_values.csv
+          echo "$VALUE" >> captured_values.csv.xlsx
