@@ -19,7 +19,7 @@ jobs:
       - name: Capture value and write to CSV
         run: |
             # Replace with your logic to capture the desired value from target_file.txt
-              VALUE=$(grep "desired_pattern" target_file.txt)
-              echo "$VALUE" >> captured_values.csv
+              Value=$(grep "desired_pattern" target_file.txt)
+              echo "$Value" >> captured_values.csv
 
 
