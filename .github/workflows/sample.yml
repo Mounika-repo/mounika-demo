@@ -14,7 +14,7 @@ jobs:
       - name: Read target file
         run: |
           # Replace `OWNER/REPO` with the target repository information
-          curl -sSL "https://github.com/Mounika-repo/Github-demo/blob/feature/all/captured_values.csv.xlsx" -o target_file.txt
+          curl -sSL "https://github.com/Mounika-repo/mounika-demo/blob/feature/task/.github/workflows/target_file.txt" -o target_file.txt
 
       - name: Capture value and write to CSV
         run: |
