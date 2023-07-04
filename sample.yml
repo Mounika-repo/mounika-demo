@@ -3,7 +3,7 @@ name: Read File and Capture Value
 on:
   push:
     branches:
-      - feature
+      - feature/task
 
 jobs:
   capture_value:
