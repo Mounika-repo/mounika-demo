@@ -16,7 +16,7 @@ jobs:
           # Replace `OWNER/REPO` with the target repository information
           curl -sSL "https://github.com/Mounika-repo/mounika-demo/blob/feature/task/.github/workflows/target_file.txt" -o target_file.txt
 
-      - name: Capture value and write to CSV
+      - name: Capture value and write to CSv
         run: |
             # Replace with your logic to capture the desired value from target_file.txt
               Value=$(grep "desired_pattern" target_file.txt)
